@@ -1,4 +1,4 @@
-Cryptography
+# Cryptography
 
 A collection of crypto challenges that kept me entertained, made me think, and occasionally question my life choices. 
 
