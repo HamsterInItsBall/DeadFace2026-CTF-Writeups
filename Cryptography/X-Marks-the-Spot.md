@@ -31,13 +31,13 @@ We start by using From Hex in CyberChef to decode the hexadecimal payload into b
 And what do we get? A beautiful mess of unreadable characters. Absolutely gorgeous... and absolutely useless at first glance. So, let's start eliminating possible approaches and figure out what kind of encryption we're dealing with.
 
 
-1. Base64
+1. Base64:
    We can rule it out because the decoded output doesn't resemble a valid Base64 string: it contains characters outside the Base64 alphabet. The expected padding character = is also missing, although its absence alone wouldn't be enough to rule Base64 out.
 
 2. Caesar / ROT
    Next up: Caesar and ROT ciphers. Sure, we have letters in the mix, but the output doesn't look like something a simple letter shift would turn into readable text. So, let's set this option aside for now.
 
-3. XOR
+3. XOR:
    Now, this is a frequent guest in CTF challenges: XOR. A single-byte XOR cipher has only 256 possible byte values to check. That's a pretty manageable number of attempts, especially when you're hoping one of them will reveal the hidden message.
 I decided to give it a shot simply because it's easy to test in a couple of minutes. If it doesn't work, we can always move on to the next idea.
 
