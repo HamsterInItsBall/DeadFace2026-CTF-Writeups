@@ -37,6 +37,7 @@ The challenge description tells us exactly what to do next: submit the dog's nam
 
 So, our flag is:
 
-<summary>Click to reveal the flag</summary>
+<details>
+<summary> Click to reveal the flag</summary>
 deadface{Fetch}
 </details>
